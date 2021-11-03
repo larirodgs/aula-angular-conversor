@@ -1,0 +1,19 @@
+.form-select{
+  display: flex;
+  justify-content: center!important;
+  text-align: center !important;
+  width: 300px;
+}
+
+.center{
+justify-content: center!important;
+text-align: center !important;
+align-items: center;
+
+}
+
+.btn-convert{
+width: 30%;
+}
+
+

@@ -1,1 +1,21 @@
-<p>home works!</p>
+ <div class="row text-center prin center">
+
+    <select [(ngModel)]="moeda1" class="form-select" aria-label="Default select example">
+      <option  disabled="true">Selecione a moeda atual</option>
+      <option  *ngFor="let item of lista" [value]="item.high">{{item.name}}</option>
+    </select>
+
+    <select [(ngModel)]="moeda2" class="form-select" aria-label="Default select example">
+      <option disabled="true" >Selecione a moeda que você ser converter</option>
+      <option  onclick="fazerConversao()"  *ngFor="let item of lista" [value]="item.high" >{{item.name}}</option>
+    </select>
+
+  <button  (click)="fazerConversao()" class="btn-primary btn-convert">Conveta</button>
+
+  <div>
+    <b>Resultado:</b>
+
+  <p>R$:{{resultadoConvercao}}</p>
+
+  </div>
+ </div>
