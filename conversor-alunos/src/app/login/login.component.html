@@ -12,9 +12,13 @@
     </div>
   </div>
   <button  (click)="fazerLogin()" class="btn bg-primary text-white"  > Acessar</button>
+  <button (click)="liberarCasdastro()" class="btn bg-primary text-white">cadastratar</button>
 </div>
 
 
+<div class="col-6">
+  <app-cadastro *ngIf="mostrarCadastro" ></app-cadastro>
+</div>
 
 
 

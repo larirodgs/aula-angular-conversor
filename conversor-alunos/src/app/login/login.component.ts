@@ -11,6 +11,8 @@ export class LoginComponent implements OnInit {
 public email:any;
 public senha:any;
 
+public mostrarCadastro = false;
+
 
 constructor() { }
 
@@ -18,7 +20,9 @@ ngOnInit(): void {
 
 }
 
-
+liberarCasdastro(){
+  this.mostrarCadastro = !this.mostrarCadastro
+}
 
 
 fazerLogin(){

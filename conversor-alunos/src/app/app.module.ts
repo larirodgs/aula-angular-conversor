@@ -2,13 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { Page401Component } from './page401/page401.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 
 @NgModule({
@@ -16,7 +17,9 @@ import { Page401Component } from './page401/page401.component';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    Page401Component
+    Page401Component,
+    CadastroComponent,
+
   ],
   imports: [
     CommonModule,
@@ -24,6 +27,7 @@ import { Page401Component } from './page401/page401.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

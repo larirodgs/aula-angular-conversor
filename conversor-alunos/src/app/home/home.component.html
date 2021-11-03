@@ -5,7 +5,7 @@
       <option  *ngFor="let item of lista" [value]="item.high">{{item.name}}</option>
     </select>
 
-    <select [(ngModel)]="moeda2" class="form-select" aria-label="Default select example">
+    <select  [(ngModel)]="moeda2" class="form-select" aria-label="Default select example">
       <option disabled="true" >Selecione a moeda que você ser converter</option>
       <option  *ngFor="let item of lista" [value]="item.high" >{{item.name}}</option>
     </select>
@@ -19,3 +19,4 @@
 
   </div>
  </div>
+
