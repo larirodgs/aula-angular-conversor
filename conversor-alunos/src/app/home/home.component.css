@@ -1,19 +1,44 @@
-.form-select{
-  display: flex;
-  justify-content: center!important;
-  text-align: center !important;
+.fundo{
+   background: #100a1c;
+    background-image:
+    radial-gradient(50% 30% ellipse at center top, #8c87dd 0%, rgba(41, 40, 40, 0) 100%),
+    radial-gradient(60% 50% ellipse at center bottom, #3f293f 0%, #201a2c 100%);
+    background-attachment: fixed;
+    font: 300 18px/1.6 Source Sans Pro, sans-serif;
+    text-align: center;
+    padding: 100px;
+}
+
+.titulo{
+  color: #ffa1ff;
+
+}
+
+.select{
   width: 300px;
-}
-
-.center{
-justify-content: center!important;
-text-align: center !important;
-align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
 
 }
 
-.btn-convert{
-width: 30%;
+button{
+  margin-top: 2%;
+  width: 282px;
+  border-radius: 10px;
+  border-width: 3px;
+  color: #ffa1ff;
+
+
 }
+
+.result{
+  color: #ffa1ff;
+  margin: auto;
+  font-size: 30px;
+}
+
+
+
 
 

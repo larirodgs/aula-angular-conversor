@@ -28,6 +28,34 @@ interface Imodedas {
       timestamp: string,
       varBid: string
 }
+    EUR:{
+    ask: string,
+    bid: string,
+    code: string,
+    codein: string,
+    create_date: string,
+    high: string,
+    low: string,
+    name: string,
+    pctChange: string,
+    timestamp: string,
+    varBid: string
+
+    }
+    CNY:{
+    ask:  string,
+    bid:  string,
+    code:  string,
+    codein:  string,
+    create_date:  string,
+    high:  string,
+    low:  string,
+    name:  string,
+    pctChange: string,
+    timestamp: string,
+    varBid:  string
+  }
+
 }
 
 

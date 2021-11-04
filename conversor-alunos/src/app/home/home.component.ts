@@ -13,11 +13,11 @@ export class HomeComponent implements OnInit {
  //public listadeMoedas:object = {}
  //public listadeMoedas1:any;
 
-  public resultadoConvercao = "00"
+ public lista2 = new Array();
+
+  public resultadoConvercao = ""
   public moeda1:any;
   public moeda2:any;
-  public lista = new Array();
-
 
 
   constructor(public api:ApiService) { }
@@ -28,18 +28,22 @@ export class HomeComponent implements OnInit {
 
 listarTodasMoedas(){
   this.api.buscarMoedas().subscribe(res =>{
-    console.log(res,"minhas moedas")
+    console.log(res,"");
 
-    this.lista.push(res.ARS)
-    this.lista.push(res.USD)
+    this.lista2.push(res.ARS);
+    this.lista2.push(res.USD);
+    this.lista2.push(res.EUR);
+    this.lista2.push(res.CNY);
+
+    console.log(this.lista2);
 
   })
 }
 
 fazerConversao(){
-  let conta = this.moeda1*this.moeda2
-  this.resultadoConvercao = conta.toString()
- console.log(this.resultadoConvercao)
+  let conta = (this.moeda1*this.moeda2).toFixed(2);
+  this.resultadoConvercao = conta.toString().replace(".",",");
+  console.log(this.resultadoConvercao)
 }
 
 
